@@ -1,0 +1,459 @@
+<html>
+    <head>
+        <title>E-Sports Website von Lukas</title>
+        <link href="style.css" rel="stylesheet" />
+        <script src="script.js" defer></script>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <header>
+            <a href="https://www.esports.net/" class="invislink"><h1 style="margin: 0;">E-Sports</h1></a>
+        </header>
+        
+        <nav>
+            <div class="section-align">
+                <h2>Navigation</h2>
+            </div>
+            <div class="button-align">
+                <button onclick="scrollToSection('spiele-section')">Spiele</button>
+                <button onclick="scrollToSection('teams-section')">Teams</button>
+                <button onclick="scrollToSection('spieler-section')">Spieler</button>
+                <button onclick="scrollToSection('turnier-section')">Turniere</button>
+                <div class="language-button-align">
+                    <button style="margin: 0; width: 70px; height: 40px; float: right;" onclick="window.location.href = 'english.html';">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Flag_of_the_United_States_%28Pantone%29.svg/255px-Flag_of_the_United_States_%28Pantone%29.svg.png" width="50px" height="auto" alt="">
+                    </button>
+                </div>
+            </div>
+        </nav>
+        
+        <div>
+            <section>
+                <div class="carousel" data-carousel>
+                  <button class="carousel-button prev" data-carousel-button="prev"><</button>
+                  <button class="carousel-button next" data-carousel-button="next">></button>
+                  <ul data-slides>
+                    <li class="slide" data-active>
+                      <img src="Banner1.jpg" alt="">
+                    </li>
+                    <li class="slide">
+                      <img src="Banner2.jpg" alt="">
+                    </li>
+                    <li class="slide">
+                      <img src="Banner3.jpg" alt="">
+                    </li>
+                  </ul>
+                </div>
+            </section>
+            <h2 class="h2headline">Willkommen zur E-Sports Welt!</h2>
+        </div>
+        
+        <div class="content" class="information">
+            <div class="text">
+                <h2>Information</h2>
+                <p>
+                    Wussten Sie, dass die größten E-Sport-Turniere mehr Zuschauer haben als der Super Bowl? 
+                    E-Sport umfasst Genres wie Echtzeitstrategie (z. B. StarCraft), Shooter (z. B. Counter-Strike), 
+                    und MOBAs (z. B. League of Legends). Professionelle Teams trainieren hart, um bei Turnieren mit 
+                    Millionen-Preisgeldern zu gewinnen. E-Sport wird zunehmend als offizieller Sport anerkannt und 
+                    revolutioniert die Unterhaltungsindustrie.
+                </p>
+                <a href="wikipedia.at/Esport">Entdecken Sie hier mehr spannende Fakten über E-Sport!</a>
+            </div>
+            <div class="news" onclick="window.location.href='https://www.esports.net/'">
+                <iframe src="https://www.esports.net/news/#content" width="600px" height="320px" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+        <!-- Spiele section -->
+        <div class="container" id="spiele-section">
+            <div class="container">
+                <h1 class="headline2">Spiele</h1>
+            </div>
+            
+            <section class="content">
+                <div class="card" onclick="window.location.href='https://www.rocketleague.com/';" >
+                    <img src="RocketLeague.jpg" alt="Spiel Bild">
+                    <h3>Rocket League</h3>
+                    <p>Rocket League ist ein actionreiches Spiel, in dem du mit deinem Fahrzeug Fußball spielst, indem du Tore schießt und spektakuläre Tricks vollführst – steig ein und erlebe den ultimativen Adrenalinkick!</p>
+                </div>
+
+                <div class="card" onclick="window.location.href='https://www.counter-strike.net/'">
+                    <img src="CSGO.jpg" alt="Spiel Bild">
+                    <h3>Counter-Strike 2</h3>
+                    <p>Erlebe spannende Taktik und präzises Gameplay. CS:GO 2 ist eine Legende im E-Sports und begeistert seit Jahren Millionen.</p>
+                </div>
+
+                <div class="card" onclick="window.location.href='https://www.fortnite.com/'">
+                    <img src="Fortnite.jpg" alt="Spiel Bild">
+                    <h3>Fortnite</h3>
+                    <p>Springe in die Action und kämpfe dich zum Sieg! Fortnite ist das populärste Battle Royale-Spiel der Welt.</p>
+                </div>
+
+                <div class="card" onclick="window.location.href='https://playvalorant.com/'">
+                    <img src="Valorant.jpg" alt="Spiel Bild">
+                    <h3>Valorant</h3>
+                    <p>Tauche ein in die spannende Welt von Valorant, einem taktischen Shooter, in dem strategisches Teamspiel und präzise Schüsse entscheidend sind, um in packenden 5-gegen-5-Matches den Sieg zu erringen!!</p>
+                </div>
+
+                <div class="card" onclick="window.location.href='https://overwatch.blizzard.com/'">
+                    <img src="Overwatch.jpg" alt="Spiel Bild">
+                    <h3>Overwatch 2</h3>
+                    <p>Tauche ein in die spannende Welt von Valorant, einem taktischen Shooter, in dem strategisches Teamspiel und präzise Schüsse entscheidend sind, um in packenden 5-gegen-5-Matches den Sieg zu erringen!!</p>
+                </div>
+
+                <div class="card" onclick="window.location.href='https://www.callofduty.com/'">
+                    <img src="COD.jpg" alt="Spiel Bild">
+                    <h3>Call of Duty: Black Ops 6 & Modern Warfare 3</h3>
+                    <p>In Black Ops 6 tauchst du in futuristische Schlachten voller High-Tech-Action ein, während dich Modern Warfare 3 mit intensiven Kämpfen im modernen Setting fesselt – perfekte Shooter-Erlebnisse für alle, die Nervenkitzel und Tempo lieben!</p>
+                </div>
+            </section>
+        </div>
+        <!-- Teams section -->
+        <div class="container" id="teams-section">
+            <div class="container" id="teams-section">
+                <h1 class="headline2">Teams</h1>
+            </div>
+            
+            <div style="display: flex;">
+                <div class="game">
+                    <h2>Fortnite</h2>
+                    <ul>
+                        <li><span class="team-name">FaZe Clan</span> (FAZE)</li>
+                        <li><span class="team-name">Ninja</span> (NINJA)</li>
+                        <li><span class="team-name">Team Liquid</span> (TL)</li>
+                        <li><span class="team-name">Cloud9</span> (C9)</li>
+                        <li><span class="team-name">Sentinels</span> (SEN)</li>
+                        <li><span class="team-name">NRG Esports</span> (NRG)</li>
+                        <li><span class="team-name">100 Thieves</span> (100T)</li>
+                        <li><span class="team-name">Team Solo Mid</span> (TSM)</li>
+                        <li><span class="team-name">Dignitas</span> (DIG)</li>
+                    </ul>
+                </div>
+            
+                <div class="game">
+                    <h2>Valorant</h2>
+                    <ul>
+                        <li><span class="team-name">Sentinels</span> (SEN)</li>
+                        <li><span class="team-name">Cloud9</span> (C9)</li>
+                        <li><span class="team-name">100 Thieves</span> (100T)</li>
+                        <li><span class="team-name">G2 Esports</span> (G2)</li>
+                        <li><span class="team-name">Fnatic</span> (FNC)</li>
+                        <li><span class="team-name">Team Liquid</span> (TL)</li>
+                        <li><span class="team-name">Team Heretics</span> (TH)</li>
+                        <li><span class="team-name">DRX</span> (DRX)</li>
+                        <li><span class="team-name">OpTic Gaming</span> (OG)</li>
+                        <li><span class="team-name">Loud</span> (LOUD)</li>
+                        <li><span class="team-name">Paper Rex</span> (PRX)</li>
+                    </ul>
+                </div>
+            
+                <div class="game">
+                    <h2>Counter-Strike: Global Offensive (CS:GO)</h2>
+                    <ul>
+                        <li><strong>Astralis</strong> (AST)</li>
+                        <li><strong>Natus Vincere</strong> (NAVI)</li>
+                        <li><strong>G2 Esports</strong> (G2)</li>
+                        <li><strong>FaZe Clan</strong> (FAZE)</li>
+                        <li><strong>Team Liquid</strong> (TL)</li>
+                        <li><strong>Team Vitality</strong> (VIT)</li>
+                        <li><strong>Heroic</strong> (HEROIC)</li>
+                        <li><strong>Cloud9</strong> (C9)</li>
+                        <li><strong>Mousesports</strong> (MOUZ)</li>
+                        <li><strong>BIG</strong> (BIG)</li>
+                    </ul>
+                </div>
+            
+                <div class="game">
+                    <h2>Overwatch</h2>
+                    <ul>
+                        <li><strong>San Francisco Shock</strong> (SFS)</li>
+                        <li><strong>Dallas Fuel</strong> (DAL)</li>
+                        <li><strong>Seoul Dynasty</strong> (SD)</li>
+                        <li><strong>Shanghai Dragons</strong> (SD)</li>
+                        <li><strong>London Spitfire</strong> (LON)</li>
+                        <li><strong>LA Gladiators</strong> (GLA)</li>
+                        <li><strong>New York Excelsior</strong> (NYXL)</li>
+                        <li><strong>Florida Mayhem</strong> (FLA)</li>
+                        <li><strong>Paris Eternal</strong> (PAR)</li>
+                        <li><strong>Atlanta Reign</strong> (ATL)</li>
+                    </ul>
+                </div>
+            
+                <div class="game">
+                    <h2>Rocket League</h2>
+                    <ul>
+                        <li><strong>NRG Esports</strong> (NRG)</li>
+                        <li><strong>Team BDS</strong> (BDS)</li>
+                        <li><strong>Vitality</strong> (VIT)</li>
+                        <li><strong>G2 Esports</strong> (G2)</li>
+                        <li><strong>Envy</strong> (ENVY)</li>
+                        <li><strong>Cloud9</strong> (C9)</li>
+                        <li><strong>Dignitas</strong> (DGT)</li>
+                        <li><strong>Luminosity Gaming</strong> (LG)</li>
+                        <li><strong>FURIA Esports</strong> (FURIA)</li>
+                        <li><strong>Version1</strong> (V1)</li>
+                    </ul>
+                </div>
+            
+                <div class="game">
+                    <h2>Call of Duty (CoD)</h2>
+                    <ul>
+                        <li><strong>Atlanta FaZe</strong> (FZ)</li>
+                        <li><strong>OpTic Texas</strong> (OPT)</li>
+                        <li><strong>Los Angeles Thieves</strong> (LAT)</li>
+                        <li><strong>New York Subliners</strong> (NYSL)</li>
+                        <li><strong>Dallas Empire</strong> (DYE)</li>
+                        <li><strong>Minnesota ROKKR</strong> (ROKKR)</li>
+                        <li><strong>Florida Mutineers</strong> (FM)</li>
+                        <li><strong>Seattle Surge</strong> (SURGE)</li>
+                        <li><strong>London Royal Ravens</strong> (LRR)</li>
+                        <li><strong>Paris Legion</strong> (PAR)</li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+        <!-- Spieler section -->
+        <div>
+            <div class="container" id="spieler-section">
+                <h1 class="headline2">Spieler</h1>
+            </div>
+
+            <div style="justify-content: center; display: flex;">
+                <!-- Spielerkarte Tenz -->
+                <div class="game" style="margin-right: 40px; margin-left: 40px; margin-bottom: 50px; padding-left: 40px;">
+                    <img src="https://prosettings.net/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=contain%2Cg=top%2Ch=200%2Cq=99%2Csharpen=1%2Cw=200/wp-content/uploads/tenz.png" width="200" height="200" alt="Tenz">
+                    <h2>Tenz</h2>
+                    <p><strong>Spiel:</strong> Valorant</p>
+                    <p><strong>Name:</strong> Tyson "TenZ" Ngo</p>
+                    <p><strong>Geburtsdatum:</strong> Mai 5, 2001</p>
+                    <p><strong>Alter:</strong> 23 Jahre</p>
+                    <p><strong>Country:</strong> Kanada <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1200px-Flag_of_Canada_%28Pantone%29.svg.png" alt="Canada"></p>
+                    <!-- <video src="tenz.mp4" width="200" height="200" muted loop></video> -->
+                </div>
+        
+                <!-- Spielerkarte Bugha -->
+                <div class="game" style="margin-right: 40px; margin-left: 40px; margin-bottom: 50px; padding-left: 40px;">
+                    <img src="https://prosettings.net/cdn-cgi/image/dpr=1,f=auto,fit=contain,g=top,h=200,q=99,sharpen=1,w=200/wp-content/uploads/bugha.png" width="200" height="200" alt="Bugha">
+                    <h2>Bugha</h2>
+                    <p><strong>Spiel:</strong> Fortnite</p>
+                    <p><strong>Name:</strong> Kyle "Bugha" Giersdorf</p>
+                    <p><strong>Geburtsdatum:</strong> Dezember 30, 2002</p>
+                    <p><strong>Alter:</strong> 22 Jahre</p>
+                    <p><strong>Country:</strong> US <img src="https://cdn.britannica.com/79/4479-050-6EF87027/flag-Stars-and-Stripes-May-1-1795.jpg" alt="US"></p>
+                    <!-- <video src="bugha.mp4" width="200" height="200" muted loop></video> -->
+                </div>
+        
+                <!-- Spielerkarte Simple -->
+                <div class="game" style="margin-right: 40px; margin-left: 40px; margin-bottom: 50px; padding-left: 40px;">
+                    <img src="https://prosettings.net/cdn-cgi/image/dpr=1,f=auto,fit=contain,g=top,h=200,q=99,sharpen=1,w=200/wp-content/uploads/s1mple.png" width="200" height="200" alt="Simple">
+                    <h2>S1mple</h2>
+                    <p><strong>Spiel:</strong> Counter-Strike: Global Offensive</p>
+                    <p><strong>Name:</strong> Oleksandr "S1mple" Kostyliev</p>
+                    <p><strong>Geburtsdatum:</strong> Oktober 2, 1997</p>
+                    <p><strong>Alter:</strong> 27 Jahre</p>
+                    <p><strong>Country:</strong> Ukraine <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1200px-Flag_of_Ukraine.svg.png" alt="Ukraine"></p>
+                    <!-- <video src="simple.mp4" width="200" height="200" muted loop></video> -->
+                </div>
+        
+                <!-- Spielerkarte Caps -->
+                <div class="game" style="margin-right: 40px; margin-left: 40px; margin-bottom: 50px; padding-left: 40px;">
+                    <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e4/LEC_Caps_2019_AS.png/revision/latest?cb=20240815150213" width="200" height="200" alt="Caps">
+                    <h2>Caps</h2>
+                    <p><strong>Spiel:</strong> League of Legends</p>
+                    <p><strong>Name:</strong> Rasmus "Caps" Winther</p>
+                    <p><strong>Geburtsdatum:</strong> November 23, 1999</p>
+                    <p><strong>Alter:</strong> 25 Jahre</p>
+                    <p><strong>Country:</strong> Dänemark <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/1200px-Flag_of_Denmark.svg.png" alt="Dänemark"></p>
+                    <!-- <video src="caps.mp4" width="200" height="200" muted loop></video> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Turnier section -->
+        <div class="container" id="turnier-section">
+            <h1 class="headline2">Turniere</h1>
+        </div>
+        
+        <div class="events-container">
+            <table class="events-table">
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Status</th>
+                        <th>Datum</th>
+                        <th>Ort</th>
+                        <th>Preisgeld</th>
+                        <th style="text-align: center;">Tier</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Laufende Events -->
+                    <tr>
+                        <td style="text-align: left;">
+                            <a href="#spiele-section" class="event-link">
+                                <img src="https://cdn2.downdetector.com/static/uploads/c/300/1773b/val_2CX5h8Z.png" alt="VCT LOCK//IN Icon" class="event-icon">
+                                VCT LOCK//IN
+                            </a>
+                        </td>
+                        <td>Laufend</td>
+                        <td>12. Januar 2025</td>
+                        <td>São Paulo, Brasilien</td>
+                        <td style="text-align: left;">$1,000,000</td>
+                        <td class="tier tier-1">Tier 1</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <a href="#spiele-section" class="event-link">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Overwatch_circle_logo.svg" alt="Overwatch League Kickoff Icon" class="event-icon">
+                                Overwatch League Kickoff
+                            </a>
+                        </td>
+                        <td>Laufend</td>
+                        <td>8. Januar 2025</td>
+                        <td>Online</td>
+                        <td style="text-align: left;">$700,000</td>
+                        <td class="tier tier-2">Tier 2</td>
+                    </tr>
+            
+                    <!-- Kommende Events -->
+                    <tr>
+                        <td style="text-align: left;">
+                            <a href="#spiele-section" class="event-link">
+                                <img src="https://static.wikia.nocookie.net/logopedia/images/d/db/Fortnite_S1.svg/revision/latest/scale-to-width-down/250?cb=20210330161743" alt="Fortnite Winter Cup Icon" class="event-icon">
+                                Fortnite Winter Cup
+                            </a>
+                        </td>
+                        <td>Bevorstehend</td>
+                        <td>10. Februar 2025</td>
+                        <td>Online</td>
+                        <td style="text-align: left;">$50,000</td>
+                        <td class="tier tier-3">Tier 3</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <a href="#spiele-section" class="event-link">
+                                <img src="https://static.wikia.nocookie.net/logopedia/images/d/db/Fortnite_S1.svg/revision/latest/scale-to-width-down/250?cb=20210330161743" alt="Fortnite Champion Series Icon" class="event-icon">
+                                Fortnite Champion Series
+                            </a>
+                        </td>
+                        <td>Bevorstehend</td>
+                        <td>15. Februar 2025</td>
+                        <td>Online</td>
+                        <td style="text-align: left;">$3,000,000</td>
+                        <td class="tier tier-1">Tier 1</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <a href="#spiele-section" class="event-link">
+                                <img src="https://img.icons8.com/fluent/512/rocket-league.png" alt="Rocket League Open Cup Icon" class="event-icon">
+                                Rocket League Open Cup
+                            </a>
+                        </td>
+                        <td>Bevorstehend</td>
+                        <td>28. Februar 2025</td>
+                        <td>Online</td>
+                        <td style="text-align: left;">$75,000</td>
+                        <td class="tier tier-3">Tier 3</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <a href="#spiele-section" class="event-link">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Overwatch_circle_logo.svg" alt="Overwatch Contenders Icon" class="event-icon">
+                                Overwatch Contenders
+                            </a>
+                        </td>
+                        <td>Bevorstehend</td>
+                        <td>18. März 2025</td>
+                        <td>London, UK</td>
+                        <td style="text-align: left;">$300,000</td>
+                        <td class="tier tier-2">Tier 2</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <a href="#spiele-section" class="event-link">
+                                <img src="https://cdn2.downdetector.com/static/uploads/c/300/1773b/val_2CX5h8Z.png" alt="Valorant Challengers EU Icon" class="event-icon">
+                                Valorant Challengers EU
+                            </a>
+                        </td>
+                        <td>Bevorstehend</td>
+                        <td>25. März 2025</td>
+                        <td>Paris, Frankreich</td>
+                        <td style="text-align: left;">$250,000</td>
+                        <td class="tier tier-2">Tier 2</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;"
+                            <a href="#spiele-section" class="event-link">
+                                <img src="https://cdn2.downdetector.com/static/uploads/c/300/1773b/val_2CX5h8Z.png" alt="VCT Champions Icon" class="event-icon">
+                                VCT Champions
+                            </a>
+                        </td>
+                        <td>Bevorstehend</td>
+                        <td>22. März 2025</td>
+                        <td>Los Angeles, USA</td>
+                        <td style="text-align: left;">$2,500,000</td>
+                        <td class="tier tier-1">Tier 1</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <a href="#spiele-section" class="event-link">
+                                <img src="https://cdn2.steamgriddb.com/icon/e1bd06c3f8089e7552aa0552cb387c92.ico" alt="CS2 Community Clash Icon" class="event-icon">
+                                CS2 Community Clash
+                            </a>
+                        </td>
+                        <td>Bevorstehend</td>
+                        <td>15. März 2025</td>
+                        <td>Warschau, Polen</td>
+                        <td style="text-align: left;">$100,000</td>
+                        <td class="tier tier-3">Tier 3</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <a href="#spiele-section" class="event-link">
+                                <img src="https://cdn2.steamgriddb.com/icon/e1bd06c3f8089e7552aa0552cb387c92.ico" alt="CS2 Major Icon" class="event-icon">
+                                CS2 Major
+                            </a>
+                        </td>
+                        <td>Bevorstehend</td>
+                        <td>5. April 2025</td>
+                        <td>Berlin, Deutschland</td>
+                        <td style="text-align: left;">$1,500,000</td>
+                        <td class="tier tier-1">Tier 1</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <a href="#spiele-section" class="event-link">
+                                <img src="https://img.icons8.com/?size=512&id=DKYLBzm6wOvS&format=png" alt="CoD Pro-Am Invitational Icon" class="event-icon">
+                                CoD Pro-Am Invitational
+                            </a>
+                        </td>
+                        <td>Bevorstehend</td>
+                        <td>10. Mai 2025</td>
+                        <td>New York, USA</td>
+                        <td style="text-align: left;">$500,000</td>
+                        <td class="tier tier-2">Tier 2</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <a href="#spiele-section" class="event-link">
+                                <img src="https://img.icons8.com/fluent/512/rocket-league.png" alt="Rocket League World Championship Icon" class="event-icon">
+                                Rocket League World Championship
+                            </a>
+                        </td>
+                        <td>Bevorstehend</td>
+                        <td>12. Juni 2025</td>
+                        <td>Dallas, USA</td>
+                        <td style="text-align: left;">$2,000,000</td>
+                        <td class="tier tier-1">Tier 1</td>
+                    </tr>
+                </tbody>
+            </table>            
+        </div>
+        
+  
+        <footer>
+            <p>&copy; 2024 E-Sports Website von Schwabegger Lukas. Keine Rechte vorbehalten.</p>
+            <img src="omen.gif" alt="footer gif">
+        </footer>        
+    </body>
+</html>
