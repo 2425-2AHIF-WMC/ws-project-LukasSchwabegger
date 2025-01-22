@@ -18,6 +18,35 @@ buttons.forEach(button => {
 })
 
 function scrollToSection(sectionId) {
-  const element = document.getElementById(sectionId);
-  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const section = document.getElementById(sectionId);
+    if (section) {
+      const offset = -50; // Offset in pixels
+      const sectionTop = section.offsetTop;
+      const adjustedScrollPosition = sectionTop - offset;
+
+      window.scrollTo({
+        top: adjustedScrollPosition,
+        behavior: 'smooth'
+      });
+    }
 }
+
+// Get the button
+const backToTopBtn = document.getElementById("backToTopBtn");
+
+// Show the button when scrolled down 100px
+window.onscroll = function () {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+};
+
+// Scroll back to the top when the button is clicked
+backToTopBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});

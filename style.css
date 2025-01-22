@@ -212,7 +212,12 @@ p > img{
     width: 20rem;
     font-size: small;
     line-height: 20px;
+    transition: transform 0.3s;
 }
+.game:hover{
+    transform: scale(1.05);
+}
+
 
 .news{
     max-width: 35%;
