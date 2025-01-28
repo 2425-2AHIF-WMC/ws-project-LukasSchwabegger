@@ -1,21 +1,22 @@
-const buttons = document.querySelectorAll("[data-carousel-button]")
+const carousel = document.querySelector("[data-carousel]");
+const slides = carousel.querySelector("[data-slides]");
 
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    const offset = button.dataset.carouselButton === "next" ? 1 : -1
-    const slides = button
-      .closest("[data-carousel]")
-      .querySelector("[data-slides]")
+let currentIndex = 0;
 
-    const activeSlide = slides.querySelector("[data-active]")
-    let newIndex = [...slides.children].indexOf(activeSlide) + offset
-    if (newIndex < 0) newIndex = slides.children.length - 1
-    if (newIndex >= slides.children.length) newIndex = 0
+function goToNextSlide() {
+  const activeSlide = slides.querySelector("[data-active]");
+  let newIndex = currentIndex + 1;
 
-    slides.children[newIndex].dataset.active = true
-    delete activeSlide.dataset.active
-  })
-})
+  if (newIndex >= slides.children.length) {
+    newIndex = 0;
+  }
+
+  slides.children[newIndex].dataset.active = true;
+  delete activeSlide.dataset.active;
+  currentIndex = newIndex;
+}
+setInterval(goToNextSlide, 5000);
+
 
 function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);
@@ -31,10 +32,8 @@ function scrollToSection(sectionId) {
     }
 }
 
-// Get the button
 const backToTopBtn = document.getElementById("backToTopBtn");
 
-// Show the button when scrolled down 100px
 window.onscroll = function () {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     backToTopBtn.style.display = "block";
@@ -43,7 +42,6 @@ window.onscroll = function () {
   }
 };
 
-// Scroll back to the top when the button is clicked
 backToTopBtn.addEventListener("click", function () {
   window.scrollTo({
     top: 0,
